@@ -1,0 +1,71 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: rgba(111, 255, 255, 0.411);
+  color: grey;
+  text-align: center;
+}
+
+#comment {
+  text-align: center;
+  margin: 0;
+  padding: 15px;
+  font-size: 25px;
+  color: rgb(95, 95, 95);
+}
+
+#prefectureName {
+  margin: 20px auto;
+  font-size: 23px;
+}
+
+#title {
+  text-align: center;
+  font-size: 18px;
+  margin: 20px;
+}
+
+#icon {
+  display: block;
+  margin: 0 auto;
+  padding: 0 30px 30px 30px;
+  width: 200px;
+}
+table {
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+#currentLocation {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  margin-bottom: 10px;
+  background-color: rgb(117, 165, 255);
+  color: rgb(255, 255, 255);
+}
+
+#prefecture,
+#city,
+button {
+  border-radius: 5px;
+  padding: 5px;
+  outline: none;
+  border: none;
+}
+
+#prefecture:hover,
+button:hover,
+#city:hover {
+  border: solid 1px rgb(143, 143, 143);
+  padding: 4px;
+}
+
+.container {
+  max-width: 300px;
+  height: auto;
+  padding: 50px;
+  margin: 30px auto;
+  background-color: rgba(231, 249, 255, 0.6);
+  border-radius: 15px;
+}
