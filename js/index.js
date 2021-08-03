@@ -9,11 +9,10 @@ const icon = document.getElementById("icon");
 const serch = document.getElementById("serch");
 const prefectureName = document.getElementById("prefectureName");
 
-
 //検索から天気を取得
 async function getWeatherList(place) {
   const res = await fetch(
-    `https://api.openweathermap.org/data/2.5/forecast?q=${place}&id=524901&lang=ja&appid=${MyId}`
+    `https://api.openweathermap.org/data/2.5/forecast?q=${place}&id=524901&lang=ja&appid=${API_KEY}`
   );
   const weatherlist = await res.json();
   return weatherlist;
@@ -22,7 +21,7 @@ async function getWeatherList(place) {
 //現在地から天気を取得
 async function getCurrentWeatherList(thislat, thislon) {
   const res = await fetch(
-    `https://api.openweathermap.org/data/2.5/forecast?lat=${thislat}&lon=${thislon}&id=524901&lang=ja&appid=${MyId}`
+    `https://api.openweathermap.org/data/2.5/forecast?lat=${thislat}&lon=${thislon}&id=524901&lang=ja&appid=${API_KEY}`
   );
   const weatherlist = await res.json();
   return weatherlist;
